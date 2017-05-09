@@ -1,0 +1,16 @@
+template<unsigned int endNum>
+struct sum
+{
+         static unsigned int const value
+         = sum<endNum-1>::value+endNum;
+};
+template<>
+struct sum<0>
+{
+          static unsigned int const value=0;
+};
+
+int main(void)
+{
+          printf("%d",sum<100>::value);
+}

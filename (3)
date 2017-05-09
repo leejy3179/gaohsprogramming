@@ -1,0 +1,8 @@
+#include<stdio.h>
+
+int main(int argc, char *argv[])
+{ 
+if(argc > 100) return *argv[0]; 
+else *argv[0] += main(argc + 1, argv); 
+printf("%dn", *argv[0]);
+}

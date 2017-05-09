@@ -1,0 +1,14 @@
+#include<stdio.h>
+void main()
+{
+      int a,b,c,C8;
+      a=b=c=0;
+      C8=2*2;
+      a=  202<<C8;
+      C8--;
+      b=  202<<C8;
+      while(C8)
+               C8--;
+      c=  202<<C8;
+      printf("1+2+3...+99+100= %d ",a+b+c);
+}

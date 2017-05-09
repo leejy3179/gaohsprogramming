@@ -1,0 +1,14 @@
+<pre>#include<stdio.h>
+
+main(int a, int b)
+{
+  if(a == 1) b=0;
+  if(a <= 100){ 
+    b+=a++;
+    main(a, b);
+  }else if(a>100){
+    printf("%dn", b);
+  }
+
+}
+</pre>
